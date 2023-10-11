@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    max-width: 980%
+    
+}
+
+.submenu{
+    display: none;
+}
+
+.submenu .oculto{
+    display: none;
+}
+
+.logo img{
+    height: inherit;
+    border-radius: 50%;
+    height: 50px; 
+    margin-top: 10px;
+          
+}
+.logo{
+    margin-right: 25px;   
+}
+
+.logoos{
+    display: none;
+}
+
+#menu{
+    display: none;
+}
+.navbar ul{
+    display: inline-flex;
+    list-style: none;
+    cursor: pointer;
+    background-color: rgb(51, 51, 51);
+    
+    
+}
+
+.navbar {
+    display: block;
+    text-align: center;
+    background-color: rgb(51, 51, 51); 
+           
+}
+
+.navbar li{
+    padding: 0 25px;
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 3px 21px 10px 0px rgba(0,0,0,0.55);
+-webkit-box-shadow: 3px 21px 10px 0px rgba(0,0,0,0.55);
+-moz-box-shadow: 3px 21px 10px 0px rgba(0,0,0,0.55);
+    
+}
+
+.navbar li:hover{
+    font-size: 18px;
+    transition: 0.5s;
+    color: rgb(122,95,24);
+    
+}
+
+img{
+    width: 99%;
+    height: 450px;  
+    object-fit: cover;
+}
+
+.container-all{
+    width: 1360px;
+    height: auto;
+    overflow: hidden;
+}
+
+.slide{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 24s infinite alternate ease-in-out;
+}
+
+.items-slide{
+    width: 400%;
+    position: relative;
+}
+
+
+@keyframes slide {
+    
+    0%{ margin-left: 0; }
+    20%{ margin-left: 0; }
+
+    25%{ margin-left: -100%; }
+    45%{ margin-left: -100%; }
+
+    50%{ margin-left: -200%; }
+    70%{ margin-left: -200%; }
+
+    75%{ margin-left: -300%; }
+    100%{ margin-left: -300%; }
+    
+}
+
+.cronograma{
+    background-color: rgb(242, 242, 242);
+    
+}
+
+.dias {   
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0px 24px 10px 0px rgba(51,51,0,0.97);
+}
+
+.dias:hover{
+    background-color: rgba(51, 51, 51, 0.5);
+    transition: background-color 888ms ease-in 178ms;
+}
+
+.fin{
+    text-shadow: -6px 12px 7px rgba(0,0,0,0.32);
+    font-size: 50px;
+}
+
+.dia{
+    height: 5px;
+    text-align: left;
+}
+
+.anuncio{
+    height: 10px;
+    text-align: right;
+    margin-top: 50px;
+}
+
+.time{
+    margin-top: 50px;
+    text-align: left;
+}
+
+.titulo{
+    background-color: rgb(242, 242, 242);
+    padding-left: 300px;
+    text-shadow: -6px 12px 7px rgba(0,0,0,0.32);
+    font-size: 50px;
+}
+
+.footer{
+    padding: 50px 0;
+    background-color: rgb(242, 242, 242);
+    text-decoration: none;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .link h3 {
+    font-size: 18px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .link a {
+    list-style: none;
+    font-size: 16px;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .link li{
+    list-style: none;
+    text-decoration: none;
+  }
+
+  footer{
+    padding-top: 50px;
+    background-color: rgb(242, 242, 242);
+
+  }
+
+  .contenido-final{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 30px;
+    box-shadow: -5px -9px 5px -3px rgba(0,0,0,0.75) inset;
+
+
+  }
+
+  .logo2{
+    padding: 0px 100px 0;
+  }
+
+  .logo2 img{
+    height: inherit;
+    border-radius: 50%; 
+  }
+
+.primer .titulo-mini{
+    font-size: 12px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+.titulo-mini2{
+    text-align: center;
+}
+
+.minis{
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 0;
+}
+
+.redes{
+    padding: 15px;
+    cursor: pointer;
+    display: inline-flex
+}
+
+.red{
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+@media(max-width:991px){
+    .container-all{
+        width: 100%;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    label{
+        background-color: rgba(51, 51, 51);
+        height: inherit;
+        justify-content: center;
+        display: flex    
+    }
+
+    .logoos{
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu .navbar{
+        color: wheat;
+    }
+
+
+    #menu:checked ~ .navbar{
+        display: initial;
+      }
+
+ 
+    
+}
